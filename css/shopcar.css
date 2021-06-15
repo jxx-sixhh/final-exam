@@ -1,0 +1,225 @@
+.cart-filter-bar {
+  font-size: 25px;
+  color: #0067b8;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.cart-filter-bar em {
+  padding: 5px;
+  border-bottom: 1px solid #0067b8;
+}
+body {
+  min-height: 0 !important;
+}
+.second-header {
+  border-bottom: 2px solid #0067b8;
+}
+.body {
+  padding: 0;
+  padding-top: 30px;
+}
+.cart-thead {
+  font-weight: 700;
+  height: 70px;
+  line-height: 70px;
+  margin: 5px 0 10px;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-top: 0;
+  position: relative;
+  font-size: 16px;
+  cursor: default;
+}
+.cart-thead .t-checkbox {
+  height: 70px;
+  line-height: 70px;
+  width: 13%;
+  padding-left: 25px;
+}
+.cart-thead .t-checkbox input {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.cart-thead .t-goods {
+  width: 30%;
+  text-align: center;
+}
+.cart-thead .t-price {
+  width: 10.6%;
+  text-align: center;
+}
+.cart-thead .t-num {
+  width: 18.5%;
+  text-align: center;
+}
+.cart-thead .t-sum {
+  width: 13.95%;
+  text-align: center;
+}
+.cart-thead .t-action {
+  width: 13.95%;
+  text-align: center;
+}
+.cart-item-list {
+  text-align: center;
+}
+.cart-item-list .cart-item {
+  line-height: 160px;
+  margin: 10px 0;
+  height: 160px;
+  background: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.cart-item-list .cart-item .p-checkbox {
+  width: 4%;
+  height: 100%;
+  padding-left: 11px;
+}
+.cart-item-list .cart-item .p-checkbox input {
+  cursor: pointer;
+}
+.cart-item-list .cart-item .p-img {
+  width: 9%;
+  float: left;
+}
+.cart-item-list .cart-item .p-msg {
+  height: 100%;
+  float: left;
+  width: 30%;
+  font-size: 18px;
+}
+.cart-item-list .cart-item .p-price {
+  line-height: 160px;
+  height: 100%;
+  width: 10.6%;
+  font-size: 16px;
+}
+.cart-item-list .cart-item .p-num {
+  width: 18.5%;
+  height: 100%;
+  padding: 58px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart-item-list .cart-item .p-num .quantity-form {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+}
+.cart-item-list .cart-item .p-num .quantity-form .decrement,
+.cart-item-list .cart-item .p-num .quantity-form .increment {
+  float: left;
+  height: 100%;
+  line-height: 38px;
+  width: 38px;
+  text-align: center;
+  color: #666;
+  margin: 0;
+  background: #fff;
+}
+.cart-item-list .cart-item .p-num .quantity-form .decrement span::before {
+  font-family: 'icomoon';
+  content: '';
+}
+.cart-item-list .cart-item .p-num .quantity-form .increment span::before {
+  font-family: 'icomoon';
+  content: '';
+}
+.cart-item-list .cart-item .p-num .quantity-form .itxt {
+  border: none;
+  float: left;
+  width: 72px;
+  height: 100%;
+  line-height: 18px;
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  -webkit-appearance: none;
+}
+.cart-item-list .cart-item .p-sum {
+  font-style: italic;
+  color: #0067b8;
+  height: 100%;
+  font-weight: 700;
+  width: 13.95%;
+}
+.cart-item-list .cart-item .p-action {
+  width: 13.87%;
+  height: 100%;
+}
+.cart-item-list .check-cart-item {
+  border: 2px solid #0067b8;
+}
+.cart-thead > div,
+.cart-item > div {
+  float: left;
+}
+.cart-floatbar {
+  cursor: default;
+  font-size: 16px;
+  height: 70px;
+  border: 1px solid #f0f0f0;
+  background: #fff;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 70px;
+}
+.cart-floatbar .select-all {
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 25px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.cart-floatbar .select-all input {
+  cursor: pointer;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 0;
+}
+.cart-floatbar .operation {
+  float: left;
+  margin-left: 40px;
+}
+.cart-floatbar .operation .clear-all {
+  font-weight: 700;
+  margin: 0 20px;
+}
+.cart-floatbar .toolbar-right {
+  float: right;
+}
+.cart-floatbar .toolbar-right .amount-sum {
+  float: left;
+}
+.cart-floatbar .toolbar-right .amount-sum em {
+  font-weight: 700;
+  color: #0067b8;
+  padding: 0 3px;
+}
+.cart-floatbar .toolbar-right .price-sum {
+  float: left;
+  margin: 0 15px;
+}
+.cart-floatbar .toolbar-right .price-sum em {
+  font-size: 16px;
+  color: #0067b8;
+  font-weight: 700;
+}
+.cart-floatbar .toolbar-right .btn-area {
+  font-weight: 700;
+  width: 94px;
+  height: 68px;
+  line-height: 68px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  background: #0067b8;
+  overflow: hidden;
+  cursor: pointer;
+}

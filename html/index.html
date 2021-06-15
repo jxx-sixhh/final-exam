@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小明商城</title>
+
+    <!-- 引入bootstrap css文件 -->
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.8/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.8/examples/navbar-fixed-top/navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.8/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.8/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- 引入swiper css文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/Swiper/5.4.5/css/swiper.min.css">
+    <!-- 引入主页css文件 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+</head>
+
+<body>
+    <div class="fu">
+        <span class="glyphicon glyphicon-phone">
+            <div class="left left1">
+                <img src="../images/download.png" alt="">
+            </div>
+        </span>
+        <span class="glyphicon glyphicon-user">
+            <div class="left left2">个人中心</div>
+        </span>
+        <span class="glyphicon glyphicon-wrench">
+            <div class="left left3">售后服务</div>
+        </span>
+        <span class="glyphicon glyphicon-headphones">
+            <div class="left left4">人工客服</div>
+        </span>
+        <a href="shopcar.html" target="_blank"><span class="glyphicon glyphicon-shopping-cart">
+            <div class="left left5">购物车(4)</div>
+        </span></a>
+    </div>
+    <div class="go">
+        <span class="glyphicon glyphicon-arrow-up"></span>
+    </div>
+    <!-- 顶部导航栏 -->
+
+    <nav class="navbar navbar-default first-header">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">小明商城</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">云服务</a></li>
+                    <li><a href="#">天星数科</a></li>
+                    <li><a href="#">有品</a></li>
+                    <li><a href="#" class="hidden-md hidden-sm hidden-xs">小爱开放平台</a></li>
+                    <li><a href="#" class="hidden-md hidden-sm hidden-xs">企业团购</a></li>
+                    <li><a href="#" class="hidden-md hidden-sm hidden-xs">资质证照</a></li>
+                    <li><a href="#" class="hidden-md hidden-sm hidden-xs">协议规则</a></li>
+                    <li><a href="#" class="phone">手机端
+                            <span class="appcode">
+                                <img src="../images/download.png" alt="" class="code">
+                            </span>
+                            <span class="three"></span></a></li>
+                    <li><a href="#" class="hidden-md hidden-sm hidden-xs">Select Location</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#" class="message">消息通知</a></li>
+                    <li>
+                        <a href="shopcar.html" class="shopcar" target="_blank"> <span class="glyphicon glyphicon-shopping-cart"></span> 购物车（4）
+                            <span class="txt">点击查看您的购物车</span></a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- 分类栏 -->
+    <nav class="navbar navbar-default second-header">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> -->
+                <a class="navbar-brand" href="#"><img src="../images/brand.jpg" alt="Brand"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="classify">
+                    <ul class="nav navbar-nav second-header-nav">
+                        <li><a href="#">手机</a>
+                            <div class="content">
+                                <a href="#"><img src="../upload/手机01.webp" alt="">
+                                    <p>Redmi K40</p>
+                                    <p class="price">1999元起</p>
+                                </a>
+                                <a href="#"><img src="../upload/手机02.webp" alt="">
+                                    <p>小米11 Ultra</p>
+                                    <p class="price">5999元起</p>
+                                </a>
+                                <a href="#"><img src="../upload/手机03.webp" alt="">
+                                    <p>小米11 青春版</p>
+                                    <p class="price">2299元起</p>
+                                </a>
+                                <a href="#"><img src="../upload/手机04.webp" alt="">
+                                    <p>小米11 Pro</p>
+                                    <p class="price">4999元起</p>
+                                </a>
+                                <a href="#"><img src="../upload/手机05.webp" alt="">
+                                    <p>Note 10 5G</p>
+                                    <p class="price">999元起</p>
+                                </a>
+                                <a href="#"><img src="../upload/手机06.webp" alt="">
+                                    <p>小米MIX FOLD</p>
+                                    <p class="price">9999元起</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#">笔记本</a>
+                            <div class="content">
+                                <a href="#"><img src="../upload/笔01.webp" alt="">
+                                    <p>Redmibook Pro 14锐龙版</p>
+                                    <p class="price">4499元起</p>
+                                </a>
+                                <a href="#"><img src="../upload/笔02.webp" alt="">
+                                    <p>Redmibook Pro 15锐龙版</p>
+                                    <p class="price">4999元起</p>
+                                </a>
+                                <a href="#"><img src="../upload/笔03.webp" alt="">
+                                    <p>小米笔记本Pro 15锐龙版</p>
+                                    <p class="price">6799元起</p>
+                                </a>
+                                <a href="#"><img src="../upload/笔04.webp" alt="">
+                                    <p>小米笔记本Pro 15</p>
+                                    <p class="price">6499元起</p>
+                                </a>
+                                <a href="#"><img src="../upload/笔05.webp" alt="">
+                                    <p>RedmiBook Pro 14</p>
+                                    <p class="price">4699元起</p>
+                                </a>
+                                <a href="#"><img src="../upload/笔06.webp" alt="">
+                                    <p>小米笔记本Pro 14</p>
+                                    <p class="price">5299元起</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#">家电</a>
+                            <div class="content">
+                                <a href="#"><img src="../upload/家01.webp" alt="">
+                                    <p>米家风冷对开门冰箱483L</p>
+                                    <p class="price">2499元</p>
+                                </a>
+                                <a href="#"><img src="../upload/家02.webp" alt="">
+                                    <p>米家扫拖机器人T</p>
+                                    <p class="price">2299元</p>
+                                </a>
+                                <a href="#"><img src="../upload/家03.png" alt="">
+                                    <p>米家互联网洗烘一体机10kg</p>
+                                    <p class="price">1999元</p>
+                                </a>
+                                <a href="#"><img src="../upload/家04.webp" alt="">
+                                    <p>小米净水器S1 800G</p>
+                                    <p class="price">2499元</p>
+                                </a>
+                                <a href="#"><img src="../upload/家05.webp" alt="">
+                                    <p>米家空气净化器3高效除菌</p>
+                                    <p class="price">899元</p>
+                                </a>
+                                <a href="#"><img src="../upload/家06.webp" alt="">
+                                    <p>米家两门冰箱160L</p>
+                                    <p class="price">899元</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#">智能硬件</a>
+                            <div class="content">
+                                <a href="#"><img src="../upload/硬件01.webp" alt="">
+                                    <p>小米全自动智能门锁</p>
+                                    <p class="price">1799元</p>
+                                </a>
+                                <a href="#"><img src="../upload/硬件02.webp" alt="">
+                                    <p>Redmi小爱触屏音箱Pro8</p>
+                                    <p class="price">499元</p>
+                                </a>
+                                <a href="#"><img src="../upload/硬件03.jpg" alt="">
+                                    <p>小米小爱触屏音箱</p>
+                                    <p class="price">249元</p>
+                                </a>
+                                <a href="#"><img src="../upload/硬件04.webp" alt="">
+                                    <p>Redmi小爱音箱Play</p>
+                                    <p class="price">89元</p>
+                                </a>
+                                <a href="#"><img src="../upload/硬件05.webp" alt="">
+                                    <p>查看全部</p>
+                                    <p>智能硬件</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#">路由器</a>
+                            <div class="content">
+                                <a href="#"><img src="../upload/路由器01.webp" alt="">
+                                    <p>小米路由器AX6000</p>
+                                    <p class="price">599元</p>
+                                </a>
+                                <a href="#"><img src="../upload/路由器02.webp" alt="">
+                                    <p>Redmi路由器AX6</p>
+                                    <p class="price">329元</p>
+                                </a>
+                                <a href="#"><img src="../upload/路由器03.webp" alt="">
+                                    <p>小米路由器AX9000</p>
+                                    <p class="price">999元</p>
+                                </a>
+                                <a href="#"><img src="../upload/路由器04.webp" alt="">
+                                    <p>小米路由器AX1800</p>
+                                    <p class="price">329元</p>
+                                </a>
+                                <a href="#"><img src="../upload/路由器05.webp" alt="">
+                                    <p>小米AIoT路由器AX3600</p>
+                                    <p class="price">499元</p>
+                                </a>
+                                <a href="#"><img src="../upload/路由器06.webp" alt="">
+                                    <p>Redmi路由器AC2100</p>
+                                    <p class="price">169元</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="hidden-md hidden-sm hidden-xs">生活用品</a></li>
+                        <li><a href="service.html" target="_blank">服务</a></li>
+                    </ul>
+
+                </div>
+                <ul class="nav navbar-nav navbar-right hidden-md hidden-sm hidden-xs">
+                    <li>
+                        <form class="navbar-form">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="submit" class="btn btn-default"><span
+                                    class="glyphicon glyphicon-search"></span></button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+
+    </nav>
+
+    <div class="container-fluid">
+        <div class="swiper">
+            <div class="swiper-container swiper-container1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../upload/轮播01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../upload/轮播02.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../upload/轮播03.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../upload/轮播04.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="nav-wrapper">
+                <ul class="tab">
+                    <li class="nav-item">
+                        <a class="nav-item-link top" href="#">手机 电话卡</a>
+                        <div class="children children-col-4">
+                            <ul class="children-list ">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img1.png" alt="">
+                                        <span>Redmi 9</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img2.jpg" alt="">
+                                        <span>Redmi 10X 4G</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img3.jpg" alt="">
+                                        <span>Redmi 10X 5G</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img4.png" alt="">
+                                        <span>小米10 青春版</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img5.jpg" alt="">
+                                        <span>Redmi K30 Pro</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img6.jpg" alt="">
+                                        <span>Redmi K30 变焦版</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img7.png" alt="">
+                                        <span>黑鲨游戏手机3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img8.png" alt="">
+                                        <span>黑鲨手机3 Pro</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img9.png" alt="">
+                                        <span>小米10 Pro</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img10.png" alt="">
+                                        <span>小米10</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img11.jpg" alt="">
+                                        <span>Redmi K30 4G</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img12.jpg" alt="">
+                                        <span>Redmi K30 5G</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img13.png" alt="">
+                                        <span>Redmi 8A</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img14.png" alt="">
+                                        <span>Redmi 8</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img15.png" alt="">
+                                        <span>小米MIX Alpha</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img16.png" alt="">
+                                        <span>Redmi Note 8 Pro</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img17.png" alt="">
+                                        <span>Redmi Note 8</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img18.jpg" alt="">
+                                        <span>Redmi 7A</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img19.jpg" alt="">
+                                        <span>移动4G+专区</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img20.jpg" alt="">
+                                        <span>小米移动 电话卡</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img21.png" alt="">
+                                        <span>手机上门维修</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img22.jpg" alt="">
+                                        <span>云服务空间月卡</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img23.jpg" alt="">
+                                        <span>中国电信</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href="#">电视 盒子</a>
+                        <div class="children children-col-4 ">
+                            <ul class="children-list ">
+                                <li>
+                                    <a href="# ">
+                                        <img src="../images/img24.png " alt=" ">
+                                        <span>电视大师 65英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="# ">
+                                        <img src="../images/img25.png " alt=" ">
+                                        <span>Redmi智能电视 X65</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="# ">
+                                        <img src="../images/img25.png " alt=" ">
+                                        <span>Redmi智能电视X55</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="# ">
+                                        <img src="../images/img26.jpg " alt=" ">
+                                        <span>Redmi智能电视MAX</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img27.png" alt="">
+                                        <span>小米电视5 55英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img28.png" alt="">
+                                        <span>小米电视5 65英寸</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img29.png" alt="">
+                                        <span>小米电视5 75英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img30.png" alt="">
+                                        <span>小米电视5 55英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img31.png" alt="">
+                                        <span>小米电视5 65英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img32.png" alt="">
+                                        <span>小米电视5 75英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img33.jpg" alt="">
+                                        <span>Redmi电视 70英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img34.jpg" alt="">
+                                        <span>全面屏电视Pro</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img35.jpg" alt="">
+                                        <span>全面屏电视Pro</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img36.jpg" alt="">
+                                        <span>壁画电视 65英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img37.jpg" alt="">
+                                        <span>小米全面屏电视</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img38.png" alt="">
+                                        <span>小米电视4A 32英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img39.png" alt="">
+                                        <span>小米电视4A 50英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img40.png" alt="">
+                                        <span>小米电视4A 55英寸</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img41.png" alt="">
+                                        <span>小米电视4A 58英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img42.png" alt="">
+                                        <span>小米电视4A 65英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img43.png" alt="">
+                                        <span>小米电视4C 32英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img44.jpg" alt="">
+                                        <span>小米电视4C 40英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img45.png" alt="">
+                                        <span>小米电视4C 43英寸</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img46.png" alt="">
+                                        <span>小米电视4C 50英寸</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href="#">笔记本 显示器</a>
+                        <div class="children children-col-2">
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img47.jpg" alt="">
+                                        <span>RedmiBook 13</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img48.png" alt="">
+                                        <span>小米笔记本 15.6"</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img49.png" alt="">
+                                        <span>小米笔记本 13.3"</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img50.jpg" alt="">
+                                        <span>小米笔记本 12.5"</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img51.png" alt="">
+                                        <span>RedmiBook 14</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img52.jpg" alt="">
+                                        <span>小米游戏本</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img53.png" alt="">
+                                        <span>显示器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img54.png" alt="">
+                                        <span>键鼠套装</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img55.png" alt="">
+                                        <span>鼠标</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img56.png" alt="">
+                                        <span>转接器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img57.jpg" alt="">
+                                        <span>平板配件</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href="#">家电 插线板</a>
+                        <div class="children children-col-4">
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img58.jpg" alt="">
+                                        <span>冰箱</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img59.png" alt="">
+                                        <span>立式空调</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img60.png" alt="">
+                                        <span>壁挂空调</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img61.png" alt="">
+                                        <span>滚筒洗衣机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img62.jpg" alt="">
+                                        <span>全自动波轮洗衣机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img63.jpg" alt="">
+                                        <span>净水器</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img64.jpg" alt="">
+                                        <span>微波炉</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img65.jpg" alt="">
+                                        <span>电烤箱</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img66.jpg" alt="">
+                                        <span>扫地机器人</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img67.jpg" alt="">
+                                        <span>吸尘器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img68.jpg" alt="">
+                                        <span>空气净化器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img69.jpg" alt="">
+                                        <span>电饭煲</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img70.jpg" alt="">
+                                        <span>电磁炉</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img71.jpg" alt="">
+                                        <span>电水壶</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img72.jpg" alt="">
+                                        <span>滤水壶</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img73.png" alt="">
+                                        <span>落地风扇</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img74.png" alt="">
+                                        <span>投影仪</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img75.jpg" alt="">
+                                        <span>灯具</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img76.jpg" alt="">
+                                        <span>插线板</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img77.jpg" alt="">
+                                        <span>新风机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img78.jpg" alt="">
+                                        <span>电暖器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img79.jpg" alt="">
+                                        <span>电压力锅</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img80.jpg" alt="">
+                                        <span>料理机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img81.jpg" alt="">
+                                        <span>电煮壶</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href="#">出行 穿戴</a>
+                        <div class="children children-col-3">
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img82.png" alt="">
+                                        <span>手环5NFC</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img83.png" alt="">
+                                        <span>手环5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img84.png" alt="">
+                                        <span>小米手表</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img85.png" alt="">
+                                        <span>手环手表</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img86.jpg" alt="">
+                                        <span>VR</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img87.jpg" alt="">
+                                        <span>平衡车</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img88.jpg" alt="">
+                                        <span>滑板车</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img89.png" alt="">
+                                        <span>自行车</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img90.jpg" alt="">
+                                        <span>车载充电器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img91.jpg" alt="">
+                                        <span>平衡车配件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img92.jpg" alt="">
+                                        <span>智能后视镜</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img93.jpg" alt="">
+                                        <span>智能记录仪</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img94.jpg" alt="">
+                                        <span>无线车充</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img95.jpg" alt="">
+                                        <span>充气宝</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img96.jpg" alt="">
+                                        <span>石英表</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href="#">智能 路由器</a>
+                        <div class="children children-col-3">
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img97.jpg" alt="">
+                                        <span>打印机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img98.png" alt="">
+                                        <span>喷墨打印机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img99.png" alt="">
+                                        <span>喷墨打印机墨水</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img100.png" alt="">
+                                        <span>小米路由器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img101.jpg" alt="">
+                                        <span>智能家庭</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img102.jpg" alt="">
+                                        <span>对讲机</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img103.jpg" alt="">
+                                        <span>摄像机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img104.jpg" alt="">
+                                        <span>照相机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img105.jpg" alt="">
+                                        <span>智能门锁</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img106.jpg" alt="">
+                                        <span>视频门铃</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img107.png" alt="">
+                                        <span>小爱老师</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img108.png" alt="">
+                                        <span>Redmi路由器</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img109.jpg" alt="">
+                                        <span>小爱音箱</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img110.png" alt="">
+                                        <span>云服务空间年卡</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img110.png" alt="">
+                                        <span>云服务空间月卡</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href="#">电源 配件</a>
+                        <div class="children children-col-2">
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img111.png" alt="">
+                                        <span>移动电源</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img112.jpg" alt="">
+                                        <span>数据线</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img113.jpg" alt="">
+                                        <span>车充</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img114.png" alt="">
+                                        <span>充电器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img115.jpg" alt="">
+                                        <span>电池</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img116.jpg" alt="">
+                                        <span>自拍杆</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img117.jpg" alt="">
+                                        <span>手机壳</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img118.jpg" alt="">
+                                        <span>手机贴膜</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img119.png" alt="">
+                                        <span>无线充电器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img120.jpg" alt="">
+                                        <span>平板配件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img121.jpg" alt="">
+                                        <span>黑鲨配件</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img122.jpg" alt="">
+                                        <span>其他配件</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href="#">健康 儿童</a>
+                        <div class="children children-col-3">
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img123.jpg" alt="">
+                                        <span>洗手机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img124.jpg" alt="">
+                                        <span>修剪器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img125.jpg" alt="">
+                                        <span>剃须刀</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img126.jpg" alt="">
+                                        <span>牙刷</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img127.jpg" alt="">
+                                        <span>吹风机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img128.png" alt="">
+                                        <span>体重秤</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img129.jpg" alt="">
+                                        <span>体脂秤</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img130.jpg" alt="">
+                                        <span>早教启智</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img131.jpg" alt="">
+                                        <span>遥控电动</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img132.jpg" alt="">
+                                        <span>益智积木</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img133.jpg" alt="">
+                                        <span>儿童手表</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img134.jpg" alt="">
+                                        <span>儿童滑板车</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img135.jpg" alt="">
+                                        <span>婴儿推车</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img136.jpg" alt="">
+                                        <span>儿童书包</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img137.jpg" alt="">
+                                        <span>婴儿理发器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img138.png" alt="">
+                                        <span>健身车</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img139.jpg" alt="">
+                                        <span>走步机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img140.jpg" alt="">
+                                        <span>点读笔</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href="#">耳机 音响</a>
+                        <div class="children children-col-3">
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img141.png" alt="">
+                                        <span>小爱音箱 Art</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img142.png" alt="">
+                                        <span>小爱触屏音箱Pro 8</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img143.png" alt="">
+                                        <span>Redmi小爱触屏音箱 8</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img144.png" alt="">
+                                        <span>小米小爱音箱</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img145.png" alt="">
+                                        <span>音箱 Pro</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img146.jpg" alt="">
+                                        <span>小米小爱触屏音箱</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img147.png" alt="">
+                                        <span>Redmi音箱</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img148.jpg" alt="">
+                                        <span>小米小爱音箱 Play</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img149.jpg" alt="">
+                                        <span>线控耳机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img150.jpg" alt="">
+                                        <span>蓝牙耳机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img151.jpg" alt="">
+                                        <span>头戴耳机</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img152.jpg" alt="">
+                                        <span>品牌耳机</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img153.png" alt="">
+                                        <span>蓝牙音箱</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img154.jpg" alt="">
+                                        <span>小米AI音箱</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img155.jpg" alt="">
+                                        <span>小米小爱音箱HD</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img156.jpg" alt="">
+                                        <span>k歌耳机</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href="#">生活 箱包</a>
+                        <div class="children children-col-3">
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img157.jpg" alt="">
+                                        <span>小背包</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img158.jpg" alt="">
+                                        <span>双肩包</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img159.jpg" alt="">
+                                        <span>胸包</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img160.jpg" alt="">
+                                        <span>旅行箱</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img161.jpg" alt="">
+                                        <span>运动鞋</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img162.jpg" alt="">
+                                        <span>眼镜</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img163.jpg" alt="">
+                                        <span>床垫</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img164.png" alt="">
+                                        <span>枕头</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img165.jpg" alt="">
+                                        <span>饰品</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img166.jpg" alt="">
+                                        <span>螺丝刀</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img167.jpg" alt="">
+                                        <span>保温杯</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img168.jpg" alt="">
+                                        <span>伞</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="children-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img169.jpg" alt="">
+                                        <span>驱蚊器</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img170.jpg" alt="">
+                                        <span>毛巾/浴巾</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img171.png" alt="">
+                                        <span>米兔</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/img172.jpg" alt="">
+                                        <span>笔</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="seckill">
+            <h3>小米秒杀</h3>
+            <div class="time">
+                <p class="round">00:00 场</p>
+                <img src="../images/seckill.jpg" alt="">
+                <p class="txt">距离结束还有</p>
+                <span class="hour">1</span>
+                <i class="one"> :</i>
+                <span class="minute">2</span>
+                <i class="two">:</i>
+                <span class="second">3</span>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper-container swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/s3.webp" alt="">
+                        <p class="name">RedmiBook Pro 14 R7 16G</p>
+                        <p class="txt">2.5K超视网膜全面屏</p>
+                        <span class="now">4699元</span>
+                        <span class="last">4999元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s1.png" alt="">
+                        <p class="name">九号平衡车燃动版米家定制</p>
+                        <p class="txt">燃动升级，随走随停</p>
+                        <span class="now">1999元</span>
+                        <span class="last">2299元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s2.webp" alt="">
+                        <p class="name">小米净水器500G增强版白色</p>
+                        <p class="txt">RO反渗透，大流量直出纯净水</p>
+                        <span class="now">999元</span>
+                        <span class="last">4499元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s3.webp" alt="">
+                        <p class="name">RedmiBook Pro 14 R7 16G</p>
+                        <p class="txt">2.5K超视网膜全面屏</p>
+                        <span class="now">4699元</span>
+                        <span class="last">4999元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s4.webp" alt="">
+                        <p class="name">米家电动剃须刀S500C黑色</p>
+                        <p class="txt">一机三用，面面俱到</p>
+                        <span class="now">229元</span>
+                        <span class="last">299元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s3.webp" alt="">
+                        <p class="name">RedmiBook Pro 14 R7 16G</p>
+                        <p class="txt">2.5K超视网膜全面屏</p>
+                        <span class="now">4699元</span>
+                        <span class="last">4999元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s5.webp" alt="">
+                        <p class="name">日常元素抽纸青春版
+                        </p>
+                        <p class="txt">24包/箱</p>
+                        <span class="now">27.9元</span>
+                        <span class="last">32.9元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s3.webp" alt="">
+                        <p class="name">RedmiBook Pro 14 R7 16G</p>
+                        <p class="txt">2.5K超视网膜全面屏</p>
+                        <span class="now">4699元</span>
+                        <span class="last">4999元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s6.webp" alt="">
+                        <p class="name">米家负离子速干吹风机H300</p>
+                        <p class="txt">小巧精悍，速干小超人</p>
+                        <span class="now">129元</span>
+                        <span class="last">149元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s3.webp" alt="">
+                        <p class="name">RedmiBook Pro 14 R7 16G</p>
+                        <p class="txt">2.5K超视网膜全面屏</p>
+                        <span class="now">4699元</span>
+                        <span class="last">4999元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s7.webp" alt="">
+                        <p class="name">小米便携鼠标2银色
+                        </p>
+                        <p class="txt">便携静音</p>
+                        <span class="now">89元</span>
+                        <span class="last">99元</span>
+                    </div>
+                    <div class="swiper-slide"><img src="../images/s8.webp" alt="">
+                        <p class="name">米家智能加湿器白色</p>
+                        <p class="txt">清新空气</p>
+                        <span class="now">149元</span>
+                        <span class="last">199元</span>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <img class="cut" src="../images/1.webp" alt="">
+
+        <div class="phone">
+            <h3>手机</h3>
+            <div class="left">
+                <img src="../images/left1.webp" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><img class="img-responsive center-block" src="../upload/手机01.webp" alt="">
+                        <p class="name">Note 10 Pro</p>
+                        <p class="txt">天现1100年度旗舰芯，VC液冷散热</p>
+                        <p class="price">1699元起</p>
+                    </li>
+                    <li><img class="img-responsive center-block" src="../upload/手机02.webp" alt="">
+                        <p class="name">Note 10 5G</p>
+                        <p class="txt">5G小金刚，旗舰长续航</p>
+                        <p class="price">1099元起</p>
+                    </li>
+                    <li><img class="img-responsive center-block" src="../upload/手机03.webp" alt="">
+                        <p class="name">小米MIX FOLD</p>
+                        <p class="txt">折叠大屏 | 自研芯片</p>
+                        <p class="price">9999元起</p>
+                    </li>
+                    <li>
+                        <img class="img-responsive center-block" src="../upload/手机04.webp" alt="">
+                        <p class="name">小米11 Ultra</p>
+                        <p class="txt">1/1. 12"GN2 | 2K四微曲屏</p>
+                        <p class="price">5999元起</p>
+                    </li>
+                    <li><img class="img-responsive center-block" src="../upload/手机05.webp" alt="">
+                        <p class="name">小米11 Pro</p>
+                        <p class="txt">1/1.12"GN2 |骁龙888</p>
+                        <p class="price">4499元起</p>
+                    </li>
+                    <li><img class="img-responsive center-block" src="../upload/手机06.webp" alt="">
+                        <p class="name">小米11</p>
+                        <p class="txt">小米11 青春版 轻薄</p>
+                        <p class="price">2299元起</p>
+                    </li>
+                    <li><img class="img-responsive center-block" src="../upload/手机01.webp" alt="">
+                        <p class="name">青春版K40</p>
+                        <p class="txt">轻薄电竞设计 </p>
+                        <p class="price">1999元起</p>
+                    </li>
+                    <li><img class="img-responsive center-block" src="../upload/手机02.webp" alt="">
+                        <p class="name">游戏增强版黑鲨4 Pro</p>
+                        <p class="txt">黑鲨4 Pro</p>
+                        <p class="price">3999元起</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <img src="../images/2.webp" alt="" class="cut">
+
+        <div class="home">
+            <h3>家电</h3>
+            <ul>
+                <li><img class="left" src="../upload/left3.webp" alt=""></li>
+                <li><img src="../upload/家电01.webp" alt="">
+                    <p class="name">小米全面屏电视65英寸E65X</p>
+                    <p class="txt">全面屏设计</p>
+                    <span class="now">2899元</span>
+                    <span class="last">3299元</span>
+                </li>
+                <li><img src="../upload/家电02.webp" alt="">
+                    <p class="name">全面屏电视E43K</p>
+                    <p class="txt">全面屏设计，海量内容</p>
+                    <span class="now">1349元</span>
+                    <span class="last">4599元</span>
+                </li>
+                <li><img src="../upload/家电03.webp" alt="">
+                    <p class="name">小米电视4A 70英寸</p>
+                    <p class="txt">大屏更享受</p>
+                    <span class="now">3499元</span>
+                    <span class="last">3999元</span>
+                </li>
+                <li><img src="../upload/家电04.webp" alt="">
+                    <p class="name">米家互联网对开门冰箱540L</p>
+                    <p class="txt">重磅新品福利特惠</p>
+                    <span class="now">2999元</span>
+                    <span class="last">3699元</span>
+                </li>
+                <li><img class="left" src="../upload/left4.webp" alt=""></li>
+                <li><img src="../upload/家电05.webp" alt="">
+                    <p class="name">Redmi全自动波轮洗衣机1A 8kg</p>
+                    <p class="txt">一键操作， 父母都爱用</p>
+                    <span class="now">799元</span>
+                    <span class="last">899元</span>
+                </li>
+                <li><img src="../upload/家电06.webp" alt="">
+                    <p class="name">米家互联网烟灶套装(天然气)</p>
+                    <p class="txt">火排烟，风随火动</p>
+                    <span class="now">1899元</span>
+                    <span class="last">2298元</span>
+                </li>
+                <li><img src="../upload/家电07.webp" alt="">
+                    <p class="name">米家电烤箱</p>
+                    <p class="txt">全能烘焙体验</p>
+                    <span class="now">269元</span>
+                    <span class="last">299元</span>
+                </li>
+                <li>
+                    <div class="head">
+                        <img src="../upload/家电08.jpg" alt="">
+                        <p class="name">小米米家空气净化器2S</p>
+                        <p class="now">549元</p>
+                    </div>
+                    <div class="foot">
+                        <h3>浏览更多</h3>
+                        <p class="txt">热门</p>
+                        <a herf="#"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <img src="../images/3.webp" alt="" class="cut">
+
+        <div class="smart">
+            <h3>智能</h3>
+            <ul>
+                <li>
+                    <img class="left" src="../upload/left5.webp" alt="">
+                </li>
+                <li><img src="../upload/智能1.webp" alt="">
+                    <p class="name">小米小爱音箱Play</p>
+                    <p class="txt">听音乐、语音遥控家电</p>
+                    <span class="now">109元</span>
+                    <span class="last">169元</span>
+                </li>
+                <li><img src="../upload/智能2.webp" alt="">
+                    <p class="name">米家智能窗帘</p>
+                    <p class="txt">窗帘开合随心控</p>
+                    <span class="now">799元</span>
+                </li>
+                <li><img src="../upload/智能3.webp" alt="">
+                    <p class="name">小米体脂秤2</p>
+                    <p class="txt">轻松掌握身体脂肪率</p>
+                    <span class="now">99元</span>
+                </li>
+                <li><img src="../upload/智能4.jpg" alt="">
+                    <p class="name">九号平衡车</p>
+                    <p class="txt">年轻人的酷玩具</p>
+                    <span class="now">1799元</span>
+                    <span class="last">1999元</span>
+                </li>
+                <li><img class="left" src="../upload/left6.webp" alt=""></li>
+                <li><img src="../upload/智能5.webp" alt="">
+                    <p class="name">小米智能[门锁推拉式</p>
+                    <p class="txt">一步推拉， 高端智能门锁</p>
+                    <span class="now">1699元</span>
+                </li>
+                <li><img src="../upload/智能6.webp" alt="">
+                    <p class="name">Redmi小爱触屏音箱8英寸</p>
+                    <p class="txt">超大屏，让智能更多可能</p>
+                    <span class="now">349元</span>
+                </li>
+                <li><img src="../upload/智能7.webp" alt="">
+                    <p class="name">小米手环5</p>
+                    <p class="txt">11种运动模式磁吸式充电</p>
+                    <span class="now">169元</span>
+                    <span class="last">189元</span>
+                </li>
+                <li>
+                    <div><img src="../upload/智能8.webp" alt="">
+                        <p class="name">小米米家空气净化器pro</p>
+                        <p class="now">949元</p>
+                    </div>
+                    <div class="foot">
+                        <h3>浏览更多</h3>
+                        <p class="txt">热门</p>
+                        <a herf="#"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="footer-head">
+                <ul>
+                    <li>
+                        <a href="#"><span></span>预约维修服务</a>
+                    </li>
+                    <li>
+                        <a href="#"><span></span>7天无理由退换</a>
+                    </li>
+                    <li>
+                        <a href="#"><span></span>15天免费换货</a>
+                    </li>
+                    <li>
+                        <a href="#"><span></span>满69包邮</a>
+                    </li>
+                    <li>
+                        <a href="#"><span></span>520余家售后网点</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-body">
+                <ul>
+                    <li class="list">
+                        <h5>帮助中心</h5>
+                        <ul>
+                            <li><a href="#">账户管理</a></li>
+                            <li><a href="#">购物指南</a></li>
+                            <li><a href="#">订单操作</a></li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <h5>服务支持</h5>
+                        <ul>
+                            <li><a href="#">售后政策</a></li>
+                            <li><a href="#">自助服务</a></li>
+                            <li><a href="#">相关下载</a></li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <h5>线下门店</h5>
+                        <ul>
+                            <li><a href="#">小米之家</a></li>
+                            <li><a href="#">服务网点</a></li>
+                            <li><a href="#">授权体验店</a></li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <h5>关于小米</h5>
+                        <ul>
+                            <li><a href="#">了解小米</a></li>
+                            <li><a href="#">加入小米</a></li>
+                            <li><a href="#">投资者关系</a></li>
+                            <li><a href="#">企业社会责任</a></li>
+                            <li><a href="#">廉洁举报</a></li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <h5>关注我们</h5>
+                        <ul>
+                            <li><a href="#">新浪微博</a></li>
+                            <li><a href="#">官方微信</a></li>
+                            <li><a href="#">联系我们.</a></li>
+                            <li><a href="#">公益基金会</a></li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <h5>特色服务</h5>
+                        <ul>
+                            <li><a href="#">F码通道</a></li>
+                            <li><a href="#">礼物码</a></li>
+                            <li><a href="#">防伪查询</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <span class="link">
+                    <a href="#">使用与销售</a>
+                    <a href="#">隐私权声明</a>
+                    <a href="#">商标</a>
+                    <a href="#">沪 ICP备12038052号-4</a>
+                    <a href="#"><img src="../upload/beianbgs.png" alt=""> 京公网安备 11010802023178号</a>
+                    <a href="#">公司证件</a>
+                    <span>© 2020 Microsoft</span>
+                </span>
+            </div>
+            <div class="slogan">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.staticfile.org/Swiper/5.4.5/js/swiper.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js " integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ " crossorigin="anonymous "></script>
+    <script>
+        window.jQuery || document.write('<script src="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.8/assets/js/vendor/jquery.min.js "><\/script>')
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.8/dist/js/bootstrap.min.js "></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.8/assets/js/ie10-viewport-bug-workaround.js "></script>
+    <script src="../js/jquery.min.js "></script>
+    <script src="../js/index.js "></script>
+    <script src="../js/common.js"></script>
+</body>
+
+</html>
